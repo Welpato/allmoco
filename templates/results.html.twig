@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+    <h4>List of results</h4>
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">Date</th>
+            <th scope="col">Restaurant of the day</th>
+            <th scope="col">Address</th>
+            <th scope="col">Total Votes</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for result in results %}
+            <tr>
+                <td>{{ result.date }}</td>
+                <td>{{ result.options[result.winnerId].name }}</td>
+                <td>{{ result.options[result.winnerId].address }}</td>
+                <td>{{ result.options[result.winnerId].totalVotes }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+
+    </table>
+{% endblock %}
