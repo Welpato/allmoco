@@ -1,28 +1,4 @@
-<?php### What to do best?
-Due to leak of time I could not implement proper unit tests,
-which I would really like to do if I had a bit more of free
-time to invest.
-
-For a better application I would really implement a proper
-database like MySQL and not SQLite, and also implement some
-mechanism of login and user insertion ( which I started
-but gave up of doing it during the development, like
-you will probably see inside my code).
-
-I would also think again about the database structure
-to add more co relational tables and make everything more
-reliable.
-
-### What I have more to say
-I really liked doing this test and probably with more time I would like to put some extra work on it
-( because choosing where everyone in the team is going
-to eat... is a real issue, not much now during this
-pandemic but you know).
-And like I said before I did not have much free time
-this week and with that I ended just working on this
-during the dawn of the weekend. Which I also believe
-that reduced my actual results.
-
+<?php
 namespace App\BusinessCase;
 
 use App\Repository\SurveyRepository;
